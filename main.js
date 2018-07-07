@@ -15,7 +15,7 @@ var HeartsBackground = {
         heart.image.src = this.heartImage;
         this.ctx.globalAlpha = heart.opacity;
         this.ctx.drawImage (heart.image, heart.x, heart.y, heart.width, heart.height);
-        this.ctx.font = "bold 60px Comic Sans MS";
+        this.ctx.font = "bold 40px Comic Sans MS";
         this.ctx.fillStyle = "#ff6666";
         this.ctx.textAlign = "center";
         this.ctx.fillText("Happy Birthday Sweetie!", this.canvas.width/2, this.canvas.height/2);
