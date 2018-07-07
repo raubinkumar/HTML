@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            .parent-div > div > div > div{
+                display: none;
+            }
+            .parent-div .quick-hide{
+                display: block;
+            }
+            .parent-div .quick-hide .first-orphan-great-grand-child{
+                display: block;
+            }
+            .parent-div .quick-hide .second-orphan-great-grand-child{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "div parent-div">
+            <div class = "child-div">
+                <div class = "first-grand-child">
+                    <div class = "quick-hide">
+                        <div class = "first-orphan-great-grand-child">
+                                This is child of orphan div.
+                        </div>
+                        <div class = "second-orphan-great-grand-child">
+                                This is child of orphan div.
+                        </div>
+                    </div>
+                    <div class = "first-great-grand-child">
+                        This is first great grand child.
+                    </div>
+                    <div class = "second-great-grand-child">
+                        This is second great grand child.
+                    </div>
+                    <div class = "third-great-grand-child">
+                        This is third great grand child.
+                    </div>
+                </div>
+                <div class = "second-grand-child">
+                    <div class = "first-great-grand-child">
+                        This is first great grand child.
+                    </div>
+                    <div class = "second-great-grand-child">
+                        This is second great grand child.
+                    </div>
+                    <div class = "third-great-grand-child">
+                        This is third great grand child.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".heart").hover(function(){
+        $(".img-contents").css("display","block");
+    });
+});
+</script>
+<style>
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 50px;
+  margin: 100px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  transition: transform .2s;
+  width: 50px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+
+.heart:hover {
+	transform: scale(2.5) rotate(-45deg);
+}
+.heart:active {
+	transform: scale(5) rotate(-45deg);
+}
+.img-contents {
+    position: absolute;
+    align-content: center;
+    left: 15px;
+    top: 0px;
+    z-index: 1;
+    transform: rotate(45deg);
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+	display: none;
+}
+</style>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<div class="heart">
+	<img class="img-contents" src="ria.jpg" width=25px height=35px></img>
+</div>
+</body>
+</html>
