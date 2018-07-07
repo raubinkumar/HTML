@@ -15,10 +15,13 @@ var HeartsBackground = {
         heart.image.src = this.heartImage;
         this.ctx.globalAlpha = heart.opacity;
         this.ctx.drawImage (heart.image, heart.x, heart.y, heart.width, heart.height);
-        this.ctx.font = "bold 40px Comic Sans MS";
+        this.ctx.font = "bold 60px Comic Sans MS";
         this.ctx.fillStyle = "#ff6666";
         this.ctx.textAlign = "center";
-        this.ctx.fillText("Happy Birthday Sweetie!", this.canvas.width/2, this.canvas.height/2);
+        var canvasHeight = this.canvas.height;
+        this.ctx.fillText("Happy", this.canvas.width/2, canvasHeight - canvasHeight/2 - 80);
+        this.ctx.fillText("Birthday", this.canvas.width/2, canvasHeight - canvasHeight/2);
+        this.ctx.fillText("Sweetie!", this.canvas.width/2, canvasHeight - canvasHeight/2 + 80);
         this.ctx.font = "15px Arial";
         this.ctx.fillStyle = "pink";
         this.ctx.textAlign = "right";
